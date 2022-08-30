@@ -1,0 +1,109 @@
+h1 {
+    color: rgb(11, 12, 73);
+    font-size: 3rem;
+}
+
+h2,
+h3,
+span{
+    color: rgb(0, 21, 114);
+}
+
+h2 {
+    font-weight: normal;
+    margin: 0;
+}
+
+h3 {
+    margin-bottom: 4px;
+}
+
+
+p {
+    color: #181775;
+
+}
+
+
+
+.background-DEBBDD {
+    background-color: #9d98e2;
+    width: 100%;
+    padding: 0.2rem 1rem;
+}
+
+main {
+    margin: 5vh 5vw;
+}
+
+.work,
+.study,
+.interest,
+.skill {
+    max-width: 100%;
+}
+
+main {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "intro intro"
+        "about about"
+        "works studies"
+        "interests skills";
+    grid-column-gap: 5vw;
+    grid-row-gap: 5vh;
+    margin: 5vh 5vw;
+}
+
+
+#intro {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: intro;
+}
+
+#intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "info address";
+}
+
+#intro>div {
+    grid-area: info;
+}
+
+#intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#about {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: about;
+}
+
+#works {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+    grid-area: works;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+#studies {
+    -ms-grid-row: 3;
+    -ms-grid-column: 2;
+    grid-area: studies;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
