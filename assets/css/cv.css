@@ -24,7 +24,15 @@ p {
 
 }
 
-
+.arrow-back {
+    position: absolute;
+    left: 60%;
+    top: 1.5%;
+}
+.arrow-back img {
+    max-height: 250px;
+    max-width: 250px;
+}
 
 .background-DEBBDD {
     background-color: #9d98e2;
